@@ -1257,7 +1257,7 @@ Incompatible changes:
     to true. See https://github.com/bazelbuild/bazel/issues/16654 for
     details.
   - `cquery --output=files` also outputs source files.
-    
+
     Closes #16602.
   - `--incompatible_strict_conflict_checks` is flipped to true. See
     https://github.com/bazelbuild/bazel/issues/16729 for details.
@@ -1266,9 +1266,9 @@ Incompatible changes:
   - `--features` only applies to targets built in the target
     configuration, and `--host_features` is used for the host / exec
     configuration (gated behind `--incompatible_use_host_features`)
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13839
-    
+
     Closes #16626.
 
 New features:
@@ -1284,10 +1284,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16428.
   - Starlark `print()` statements are now emitted iff the line of
     code is executed. They are no longer replayed on subsequent
@@ -1320,11 +1320,11 @@ Important changes:
   - Added a new `max_compatibility_level` attribute to the
     `bazel_dep` directive, which allows version selection to upgrade
     a dependency up to the specified compatibility level.
-    
+
     Co-authored-by: Brentley Jones <github@brentleyjones.com>
   - `--experimental_remote_grpc_log` has been renamed to
     `--remote_grpc_log`
-    
+
     Closes #18180.
 
 This release contains contributions from many people at Google, as well as Ben Lee, Brentley Jones, Ezekiel Warren, Fabian Meumertzheim, keertk, Keith Smiley, Krzysztof Naglik, kshyanashree, lunch-glide-pepper, oquenchil, Patrick Balestra, Son Luong Ngoc, Ted Kaplan, Ted Kaplan, UebelAndre, Xùdōng Yáng, Yannic, yuzhy8701.
@@ -2724,7 +2724,7 @@ Incompatible changes:
 
   - GrpcRemoteDownloader only includes relevant headers instead of
     sending all credentials.
-    
+
     Closes #16439.
 
 Important changes:
@@ -3286,16 +3286,16 @@ Incompatible changes:
 
   - GrpcRemoteDownloader only includes relevant headers instead of
     sending all credentials.
-    
+
     Closes #16439.
   - analysis_test moved into testing.analysis_test
 
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -3304,13 +3304,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
   - none
     RELNOTES:none
@@ -3321,15 +3321,15 @@ Important changes:
     {execution_platforms,toolchains}_to_register attributes on the
     module() directive.
   - Add support for fetching RPC credentials from credential helper.
-    
+
     Progress on https://github.com/bazelbuild/bazel/issues/15856
-    
+
     Closes #15947.
   - `cquery`'s new output mode
     [`--output=files`](https://bazel.build/docs/cquery#files-output)
     lists the output files of the targets matching the query. It
     takes the current value of `--output_groups` into account.
-    
+
     Closes #15552.
   - Fix for desugaring failure on Bazel+Android+Windows build
     scenario.
@@ -3339,10 +3339,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16667.
 
 This release contains contributions from many people at Google, as well as amberdixon, Andreas Fuchs, Benjamin Peterson, Brentley Jones, Chenchu Kolli, Dan Fleming, Danny Wolf, Emil Kattainen, Fabian Meumertzheim, Gowroji Sunil, hvadehra, Juh-Roch, Keith Smiley, Krzysztof Naglik, kshyanashree, Niyas Sait, Noa Resare, Oliver Eikemeier, oquenchil, Peter Mounce, Philipp Schrader, Ryan Beasley, Thi Doãn, Xùdōng Yáng, Yannic, Zhongpeng Lin.
@@ -3722,7 +3722,7 @@ Incompatible changes:
     to true. See https://github.com/bazelbuild/bazel/issues/16654 for
     details.
   - `cquery --output=files` also outputs source files.
-    
+
     Closes #16602.
   - `--incompatible_strict_conflict_checks` is flipped to true. See
     https://github.com/bazelbuild/bazel/issues/16729 for details.
@@ -3731,9 +3731,9 @@ Incompatible changes:
   - `--features` only applies to targets built in the target
     configuration, and `--host_features` is used for the host / exec
     configuration (gated behind `--incompatible_use_host_features`)
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13839
-    
+
     Closes #16626.
 
 Important changes:
@@ -3744,10 +3744,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16428.
   - Starlark `print()` statements are now emitted iff the line of
     code is executed. They are no longer replayed on subsequent
@@ -4640,7 +4640,7 @@ Incompatible changes:
     to true. See https://github.com/bazelbuild/bazel/issues/16654 for
     details.
   - `cquery --output=files` also outputs source files.
-    
+
     Closes #16602.
   - `--incompatible_strict_conflict_checks` is flipped to true. See
     https://github.com/bazelbuild/bazel/issues/16729 for details.
@@ -4649,9 +4649,9 @@ Incompatible changes:
   - `--features` only applies to targets built in the target
     configuration, and `--host_features` is used for the host / exec
     configuration (gated behind `--incompatible_use_host_features`)
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13839
-    
+
     Closes #16626.
 
 Important changes:
@@ -4662,10 +4662,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16428.
   - Starlark `print()` statements are now emitted iff the line of
     code is executed. They are no longer replayed on subsequent
@@ -5142,7 +5142,7 @@ Incompatible changes:
     to true. See https://github.com/bazelbuild/bazel/issues/16654 for
     details.
   - `cquery --output=files` also outputs source files.
-    
+
     Closes #16602.
   - `--incompatible_strict_conflict_checks` is flipped to true. See
     https://github.com/bazelbuild/bazel/issues/16729 for details.
@@ -5151,9 +5151,9 @@ Incompatible changes:
   - `--features` only applies to targets built in the target
     configuration, and `--host_features` is used for the host / exec
     configuration (gated behind `--incompatible_use_host_features`)
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13839
-    
+
     Closes #16626.
 
 Important changes:
@@ -5164,10 +5164,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16428.
   - Starlark `print()` statements are now emitted iff the line of
     code is executed. They are no longer replayed on subsequent
@@ -5543,7 +5543,7 @@ Incompatible changes:
     to true. See https://github.com/bazelbuild/bazel/issues/16654 for
     details.
   - `cquery --output=files` also outputs source files.
-    
+
     Closes #16602.
   - `--incompatible_strict_conflict_checks` is flipped to true. See
     https://github.com/bazelbuild/bazel/issues/16729 for details.
@@ -5552,9 +5552,9 @@ Incompatible changes:
   - `--features` only applies to targets built in the target
     configuration, and `--host_features` is used for the host / exec
     configuration (gated behind `--incompatible_use_host_features`)
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13839
-    
+
     Closes #16626.
 
 Important changes:
@@ -5565,10 +5565,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16428.
   - Starlark `print()` statements are now emitted iff the line of
     code is executed. They are no longer replayed on subsequent
@@ -6049,7 +6049,7 @@ Incompatible changes:
     to true. See https://github.com/bazelbuild/bazel/issues/16654 for
     details.
   - `cquery --output=files` also outputs source files.
-    
+
     Closes #16602.
   - `--incompatible_strict_conflict_checks` is flipped to true. See
     https://github.com/bazelbuild/bazel/issues/16729 for details.
@@ -6269,10 +6269,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16428.
   - Starlark `print()` statements are now emitted iff the line of
     code is executed. They are no longer replayed on subsequent
@@ -6813,16 +6813,16 @@ Incompatible changes:
 
   - GrpcRemoteDownloader only includes relevant headers instead of
     sending all credentials.
-    
+
     Closes #16439.
   - analysis_test moved into testing.analysis_test
 
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -6831,13 +6831,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
   - none
     RELNOTES:none
@@ -6848,15 +6848,15 @@ Important changes:
     {execution_platforms,toolchains}_to_register attributes on the
     module() directive.
   - Add support for fetching RPC credentials from credential helper.
-    
+
     Progress on https://github.com/bazelbuild/bazel/issues/15856
-    
+
     Closes #15947.
   - `cquery`'s new output mode
     [`--output=files`](https://bazel.build/docs/cquery#files-output)
     lists the output files of the targets matching the query. It
     takes the current value of `--output_groups` into account.
-    
+
     Closes #15552.
   - Fix for desugaring failure on Bazel+Android+Windows build
     scenario.
@@ -6866,10 +6866,10 @@ Important changes:
     is the preferred way to access data dependencies at runtime and
     works on all platforms, even when runfiles are not enabled (e.g.,
     on Windows by default).
-    
+
     Work towards #16124
     Fixes #10923
-    
+
     Closes #16667.
 
 This release contains contributions from many people at Google, as well as amberdixon, Andreas Fuchs, Benjamin Peterson, Brentley Jones, Chenchu Kolli, Dan Fleming, Danny Wolf, Emil Kattainen, Fabian Meumertzheim, Gowroji Sunil, hvadehra, Juh-Roch, Keith Smiley, Krzysztof Naglik, kshyanashree, Niyas Sait, Noa Resare, Oliver Eikemeier, oquenchil, Peter Mounce, Philipp Schrader, Ryan Beasley, Thi Doãn, Xùdōng Yáng, Yannic, Zhongpeng Lin.
@@ -7895,7 +7895,7 @@ Incompatible changes:
   - flipped --incompatible_java_common_parameters (see #12373)
   - GrpcRemoteDownloader only includes relevant headers instead of
     sending all credentials.
-    
+
     Closes #16439.
 
 New features:
@@ -8079,9 +8079,9 @@ Important changes:
   - Bazel no longer supports Java 8. From this version on, the
     minimum required JDK is OpenJDK 11.
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -8090,13 +8090,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
   - none
     RELNOTES:none
@@ -8107,15 +8107,15 @@ Important changes:
     {execution_platforms,toolchains}_to_register attributes on the
     module() directive.
   - Add support for fetching RPC credentials from credential helper.
-    
+
     Progress on https://github.com/bazelbuild/bazel/issues/15856
-    
+
     Closes #15947.
   - `cquery`'s new output mode
     [`--output=files`](https://bazel.build/docs/cquery#files-output)
     lists the output files of the targets matching the query. It
     takes the current value of `--output_groups` into account.
-    
+
     Closes #15552.
   - Fix for desugaring failure on Bazel+Android+Windows build
     scenario.
@@ -8834,7 +8834,7 @@ Incompatible changes:
 
   - GrpcRemoteDownloader only includes relevant headers instead of
     sending all credentials.
-    
+
     Closes #16439.
 
 Important changes:
@@ -9580,9 +9580,9 @@ Cherry picks:
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -9591,13 +9591,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
   - none
     RELNOTES:none
@@ -9608,15 +9608,15 @@ Important changes:
     {execution_platforms,toolchains}_to_register attributes on the
     module() directive.
   - Add support for fetching RPC credentials from credential helper.
-    
+
     Progress on https://github.com/bazelbuild/bazel/issues/15856
-    
+
     Closes #15947.
   - `cquery`'s new output mode
     [`--output=files`](https://bazel.build/docs/cquery#files-output)
     lists the output files of the targets matching the query. It
     takes the current value of `--output_groups` into account.
-    
+
     Closes #15552.
   - Fix for desugaring failure on Bazel+Android+Windows build
     scenario.
@@ -10112,9 +10112,9 @@ Cherry picks:
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -10123,13 +10123,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
   - none
     RELNOTES:none
@@ -10140,15 +10140,15 @@ Important changes:
     {execution_platforms,toolchains}_to_register attributes on the
     module() directive.
   - Add support for fetching RPC credentials from credential helper.
-    
+
     Progress on https://github.com/bazelbuild/bazel/issues/15856
-    
+
     Closes #15947.
   - `cquery`'s new output mode
     [`--output=files`](https://bazel.build/docs/cquery#files-output)
     lists the output files of the targets matching the query. It
     takes the current value of `--output_groups` into account.
-    
+
     Closes #15552.
   - Fix for desugaring failure on Bazel+Android+Windows build
     scenario.
@@ -10887,9 +10887,9 @@ Cherry picks:
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -10898,13 +10898,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
   - none
     RELNOTES:none
@@ -10915,15 +10915,15 @@ Important changes:
     {execution_platforms,toolchains}_to_register attributes on the
     module() directive.
   - Add support for fetching RPC credentials from credential helper.
-    
+
     Progress on https://github.com/bazelbuild/bazel/issues/15856
-    
+
     Closes #15947.
   - `cquery`'s new output mode
     [`--output=files`](https://bazel.build/docs/cquery#files-output)
     lists the output files of the targets matching the query. It
     takes the current value of `--output_groups` into account.
-    
+
     Closes #15552.
   - Fix for desugaring failure on Bazel+Android+Windows build
     scenario.
@@ -11587,9 +11587,9 @@ Cherry picks:
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -11598,13 +11598,13 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
   - Starlark test rules can use the new inherited_environment
     parameter of testing.TestEnvironment to specify environment
     variables
     whose values should be inherited from the shell environment.
-    
+
     Closes #14849.
 
 This release contains contributions from many people at Google, as well as amberdixon, Andreas Fuchs, Benjamin Peterson, Brentley Jones, Chenchu Kolli, Dan Fleming, Danny Wolf, Fabian Meumertzheim, hvadehra, Keith Smiley, Niyas Sait, Noa Resare, Oliver Eikemeier, oquenchil, Peter Mounce, Philipp Schrader, Thi Doãn, Xùdōng Yáng, Yannic, Zhongpeng Lin.
@@ -12127,9 +12127,9 @@ Cherry picks:
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -12138,7 +12138,7 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
 
 This release contains contributions from many people at Google, as well as amberdixon, Benjamin Peterson, Brentley Jones, Dan Fleming, Danny Wolf, Fabian Meumertzheim, Keith Smiley, Niyas Sait, Noa Resare, Oliver Eikemeier, oquenchil, Philipp Schrader, Xùdōng Yáng, Yannic.
@@ -12399,9 +12399,9 @@ Cherry picks:
 Important changes:
 
   - alias() can now select() directly on constraint_value()
-    
+
     Fixes https://github.com/bazelbuild/bazel/issues/13047.
-    
+
     Closes #14310.
   - Fixed an issue where Bazel could erroneously report a test passes
     in coverage mode without actually running the test.
@@ -12410,7 +12410,7 @@ Important changes:
     output_generator label.
   - Bazel now no longer includes system headers on macOS in coverage
     reports (#14969).
-    
+
     Closes #14971.
 
 This release contains contributions from many people at Google, as well as amberdixon, Benjamin Peterson, Brentley Jones, Dan Fleming, Danny Wolf, Fabian Meumertzheim, Keith Smiley, Niyas Sait, Noa Resare, Oliver Eikemeier, oquenchil, Philipp Schrader, Xùdōng Yáng, Yannic.
