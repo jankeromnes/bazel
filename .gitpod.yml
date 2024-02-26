@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - command: >
+      git fetch origin &&
+      git checkout engflow-pkg-5.4.1 &&
+      bazel build //src:bazel -c opt --embed_label="5.4.1" --stamp &&
+      cp ./bazel-bin/src/bazel .
